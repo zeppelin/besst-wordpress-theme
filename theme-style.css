@@ -1,0 +1,102 @@
+@import "node_modules/tailwindcss/base.css";
+@import "node_modules/tailwindcss/components.css";
+@import "node_modules/tailwindcss/utilities.css";
+
+/* Nav specific things that are not accessible from the template */
+.main-menu > ul {
+  @apply flex uppercase;
+}
+
+.main-menu > ul > .page_item {
+  @apply ml-8 text-sm;
+}
+
+.main-menu > ul > .page_item a {
+  @apply block py-4 border-b-4 border-t-4 border-red-600;
+
+  transition: border-color 300ms ease-out;
+}
+
+.main-menu > ul > .page_item a:hover,
+.main-menu > ul > .page_item.current_page_item a {
+  border-bottom-color: white;
+}
+
+.page_item_has_children ul {
+  @apply hidden;
+}
+
+/* Headings */
+
+.heading-1 {
+  @apply uppercase font-bold text-3xl text-center tracking-wider;
+}
+
+.heading-1::after {
+  @apply mt-2 bg-red-600 mx-auto block;
+
+  content: '';
+  width: 9rem;
+  height: 6px;
+}
+
+/* Static text */
+
+.text-content p,
+.text-content blockquote,
+.text-content ol,
+.text-content ul {
+  @apply mb-4;
+}
+
+
+/* Team index page */
+
+.team-grid {
+  @apply bg-gray-800;
+}
+
+@screen md {
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.team-grid-item {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+}
+
+@screen lg {
+  .team-grid-item {
+    @apply pr-4;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 3rem;
+  }
+}
+
+.team-grid-item-heading {
+  @apply mt-6 text-2xl font-bold uppercase mb-1;
+}
+
+.team-grid-item-subheading {
+  @apply font-bold uppercase mb-3 text-red-600;
+}
+
+.team-grid-item-lead {
+  @apply mb-6;
+}
+
+.team-grid-item-link {
+  @apply font-bold uppercase text-sm;
+}
+
+/* Team show page */
+
+.team-show-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
