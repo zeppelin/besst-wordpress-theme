@@ -1,0 +1,24 @@
+.team-grid {
+  @screen md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.team-grid-item {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+
+  @screen lg {
+    display: grid;
+    grid-template-columns: 3.2fr 4fr;
+    grid-column-gap: 3rem;
+  }
+}
+
+.team-grid-item-img-wrapper {
+  padding-bottom: 70%;
+
+  @screen lg {
+    padding-bottom: 150%;
+  }
+}

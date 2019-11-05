@@ -1,7 +1,7 @@
 <div class="container mx-auto">
-  <h1 class="heading-1 my-20"><?php the_title(); ?></h1>
+  <h1 class="intro-heading"><?php the_title(); ?></h1>
 
-  <div class="mx-auto mb-20 w-2/3 text-center text-lg leading-loose">
+  <div class="intro-body">
     <?php the_content(); ?>
   </div>
 </div>

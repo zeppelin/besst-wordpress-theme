@@ -1,0 +1,31 @@
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.heading-1 {
+  @apply uppercase font-bold text-center tracking-wider;
+
+  @screen md {
+    @apply text-3xl;
+  }
+}
+
+.heading-1::after {
+  @apply mt-2 bg-red-600 mx-auto block;
+
+  content: '';
+  height: 6px;
+
+  width: 6rem;
+
+  @screen lg {
+    width: 9rem;
+  }
+}
+
+.text-content p,
+.text-content blockquote,
+.text-content ol,
+.text-content ul {
+  @apply mb-4;
+}

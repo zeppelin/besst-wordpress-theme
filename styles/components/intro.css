@@ -1,0 +1,37 @@
+.intro-heading {
+  @apply heading-1 my-10 px-4;
+
+  @screen lg {
+    @apply my-20;
+  }
+
+  &::after {
+    @apply mt-2 bg-red-600 mx-auto block;
+
+    content: '';
+    height: 6px;
+
+    width: 6rem;
+
+    @screen lg {
+      width: 9rem;
+    }
+  }
+
+}
+
+.intro-body {
+  @apply mx-auto px-2 mb-20 text-center text-sm leading-loose;
+
+  @screen sm {
+    @apply w-4/5;
+  }
+
+  @screen lg {
+    @apply w-10/12 text-lg;
+  }
+
+  @screen xl {
+    @apply w-2/3;
+  }
+}

@@ -1,0 +1,38 @@
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.main-menu > ul {
+  @apply uppercase;
+
+  @screen lg {
+    @apply flex uppercase;
+  }
+}
+
+.main-menu > ul > .page_item {
+  @apply text-sm;
+
+  @screen lg {
+    @apply ml-8;
+  }
+}
+
+.main-menu > ul > .page_item a {
+  @apply block px-4 py-4 border-b border-red-600;
+
+  @screen lg {
+    @apply px-0 py-4 border-b-4 border-t-4 border-red-600;
+  }
+
+  transition: border-color 300ms ease-out;
+}
+
+.main-menu > ul > .page_item a:hover,
+.main-menu > ul > .page_item.current_page_item a {
+  border-bottom-color: white;
+}
+
+.page_item_has_children ul {
+  @apply hidden;
+}

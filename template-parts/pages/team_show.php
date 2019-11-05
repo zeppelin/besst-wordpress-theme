@@ -3,7 +3,18 @@
     <div class="team-show-layout">
 
       <div class="">
-        <img class="w-full block border-b-4 border-red-600" src="https://picsum.photos/id/1025/4951/3301">
+        <?php
+          $source = get_post_meta(get_the_ID(), 'profile_pic_url', true);
+          $fallback = 'https://picsum.photos/id/1025/4951/3301';
+
+          $profile_pic_url = $fallback;
+
+          if ($source) {
+            $profile_pic_url = $source;
+          }
+        ?>
+
+        <img class="w-full block border-b-4 border-red-600" src="<?php echo $profile_pic_url ?>">
       </div>
 
       <div>
