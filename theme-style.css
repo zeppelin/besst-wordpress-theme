@@ -10,3 +10,31 @@
 @import "./styles/components/team-show.css";
 
 /* Nav specific things that are not accessible from the template */
+
+.entry-content {
+  @apply mt-10;
+}
+
+article {
+  @apply mx-4;
+
+  @screen sm {
+    @apply w-4/5 mx-auto;
+  }
+
+  @screen md {
+    @apply w-2/3;
+  }
+
+  @screen lg {
+    @apply w-1/2;
+  }
+
+  & h4 {
+    @apply mt-8 mb-4 text-3xl;
+  }
+
+  & p {
+    @apply mb-4;
+  }
+}

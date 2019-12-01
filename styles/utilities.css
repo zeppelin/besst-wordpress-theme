@@ -1,7 +1,3 @@
-.transition-all {
-  transition: all 0.2s ease-in-out;
-}
-
 .heading-1 {
   @apply uppercase font-bold text-center tracking-wider;
 
@@ -28,4 +24,8 @@
 .text-content ol,
 .text-content ul {
   @apply mb-4;
+}
+
+.divider {
+  @apply border-gray-500;
 }

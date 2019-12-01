@@ -1,5 +1,11 @@
 .team-show-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3rem;
+  @screen lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+  }
+}
+
+.team-show-img-wrapper {
+  padding-bottom: 65%;
 }

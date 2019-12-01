@@ -44,7 +44,7 @@
 
       <div class="team-grid-item">
         <a
-          class="team-grid-item-img-wrapper block relative opacity-75 hover:opacity-100 transition-all"
+          class="team-grid-item-img-wrapper block relative opacity-75 hover:opacity-100 transition-opacity"
           href="<?php echo $page_obj['link'] ?>"
         >
           <img
@@ -71,7 +71,7 @@
             <?php echo $page_obj['intro'] ?>
           </p>
 
-          <a class="font-bold uppercase text-sm hover:opacity-75 transition-all" href="<?php echo $page_obj['link'] ?>">
+          <a class="font-bold uppercase text-sm hover:opacity-75 transition-opacity" href="<?php echo $page_obj['link'] ?>">
             Bemutatkozás
           </a>
         </div>
